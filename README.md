@@ -5,3 +5,6 @@ Node tutorial to learn:
 - Remove data from the collection using HTTP DELETE
 - Use AJAX for all data operations
 - Update the DOM with jQuery
+
+Testing tools: 
+

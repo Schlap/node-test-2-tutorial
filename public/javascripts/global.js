@@ -8,6 +8,7 @@ $(document).ready(function(){
   $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
   $('#btnAddUser').on('click', addUser);
   $('#userList table tbody').on('click', 'td a.linkdeleteuser', deleteUser);
+  $('#userList table tbody').on('click', 'td a.linkupdateuser', updateUser);
 });
 
 //* Functions ================================================================
@@ -28,6 +29,7 @@ function populateTable() {
             tableContent += '<td><a href="#" class="linkshowuser" rel="' + this.username + '" title="Show Details">' + this.username + '</a></td>';
             tableContent += '<td>' + this.email + '</td>';
             tableContent += '<td><a href="#" class="linkdeleteuser" rel="' + this._id + '">delete</a></td>';
+            tableContent += '<td><a href="#" class="linkupdateuser" rel="' + this._id + '">update</a></td>';
             tableContent += '</tr>';
         });
 
@@ -151,3 +153,10 @@ function deleteUser(event) {
     }
 
 };
+
+function updateUser(event){
+
+  event.preventDefault();
+
+
+}
